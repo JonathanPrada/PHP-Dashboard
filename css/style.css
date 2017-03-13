@@ -121,7 +121,7 @@ body > .container {
     width: 14px;
 }
 
-.task-content {
+.task-content li {
     background-color: lightgrey;
     height: 46px;
     padding-top: 13px;
@@ -157,3 +157,19 @@ body > .container {
     color: gray;
 }
 
+/* Task sorting */
+
+#sortable1, #sortable2 {
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+#sortable1 li, #sortable2 li {
+    font-size: 1.2em;
+    width: 100%;
+    background-color: lightgrey;
+    height: 46px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}

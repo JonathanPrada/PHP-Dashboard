@@ -1,10 +1,11 @@
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="utf-8">
     <title>Dashboard</title>
     <!-- Style sheets-->
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -80,9 +81,9 @@
         <div class="col-md-1"></div>
         <div class="col-md-5">
             <div class="input-group search-field">
-                <input type="text" class="form-control" placeholder="">
+                <input id="tags" type="text" class="form-control" placeholder="">
                 <span class="input-group-btn">
-                <button class="btn btn-default" type="button">X</button>
+                <button id="btn2" class="btn btn-default" type="button">X</button>
                 </span>
             </div>
         </div>
@@ -97,12 +98,20 @@
         <div class="col-md-1"></div>
         <div class="col-md-5">
             <div class="row">
-                <div class="col-md-1 task-color">
+<!-- <div class="col-md-1 task-color">
 
                 </div>
                 <div class="col-md-11 task-content align-middle">
-                    task
-                </div>
+
+                </div>-->
+                    <ul id="sortable1" class="connectedSortable">
+                        <li class="ui-state-default">Item 1</li>
+                        <li class="ui-state-default">Item 2</li>
+                        <li class="ui-state-default">Item 3</li>
+                        <li class="ui-state-default">Item 4</li>
+                        <li class="ui-state-default">Item 5</li>
+                    </ul>
+
             </div>
         </div>
         <div id="checklist" class="col-md-5">
@@ -141,7 +150,14 @@
             </div>
             <div class="row">
                 <div class="col-md-12 task-list">
-
+                    <br>
+                    <ul id="sortable2" class="connectedSortable">
+                        <li class="ui-state-highlight">Item 1</li>
+                        <li class="ui-state-highlight">Item 2</li>
+                        <li class="ui-state-highlight">Item 3</li>
+                        <li class="ui-state-highlight">Item 4</li>
+                        <li class="ui-state-highlight">Item 5</li>
+                    </ul>
                 </div>
             </div>
             <div class="row">
@@ -156,6 +172,11 @@
 </div>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
 
