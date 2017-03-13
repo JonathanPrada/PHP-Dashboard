@@ -1,0 +1,159 @@
+/* body & general styling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body > .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.glyphicon {
+    font-size: 24px;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+/* menu styling */
+
+#menu {
+    height: 56px;
+    background-color: #114285;
+    color: white;
+    font-size: 16px;
+}
+
+
+.no-padding {
+    padding-right:0;
+    padding-left:0;
+}
+
+#menu span {
+    position: relative;
+    top: 18px;
+}
+
+#menu p {
+    position: relative;
+    top: 16px;
+    left: -90px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+/* steps styling */
+
+#steps {
+    background-color: #1d56a5;
+    color: white;
+    height:336px;
+}
+
+#steps span {
+    position: relative;
+    right: 40px;
+    top: 40px;
+    size: 200px;
+}
+
+#steps p {
+    position: relative;
+    font-size: 14px;
+    top: 25px;
+}
+
+
+#steps .steps-subtext {
+    font-size: 12px;
+    position: relative;
+    top: -8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.horizontal-line {
+    width: 90px;
+    position: relative;
+    left: 150px;
+}
+
+.horizontal-line hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid dimgrey;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* title styling */
+
+#title {
+    position: relative;
+    top: -100px;
+    color: white;
+    font-size: 24px;
+}
+
+/* search box styling */
+#search {
+    position: relative;
+    top: -80px;
+}
+
+.search-field{
+    width: 95%;
+}
+
+
+/* Task color */
+
+.task-color {
+    background-color: lightblue;
+    height: 46px;
+    width: 14px;
+}
+
+.task-content {
+    background-color: lightgrey;
+    height: 46px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.task-list {
+    height: 25%;
+}
+
+/* Checklist styling */
+
+#checklist {
+    background-color: white;
+    position: relative;
+    top: -170px;
+}
+
+#checklist #checklist-name {
+    width: 100%;
+
+}
+
+#checklist #main-title {
+    background-color: lightgrey;
+}
+
+#checklist .subtitle-blue {
+    color: dodgerblue;
+}
+
+#checklist .subtitle-gray {
+    color: gray;
+}
+
