@@ -20,25 +20,20 @@ body > .container {
 
 /* menu styling */
 
-#menu {
-    height: 56px;
+#newmenu {
     background-color: #114285;
     color: white;
+    height: 56px;
     font-size: 16px;
 }
 
 
-.no-padding {
-    padding-right:0;
-    padding-left:0;
-}
-
-#menu span {
+#newmenu span {
     position: relative;
     top: 18px;
 }
 
-#menu p {
+#newmenu p {
     position: relative;
     top: 16px;
     left: -90px;
@@ -55,6 +50,11 @@ body > .container {
     background-color: #1d56a5;
     color: white;
     height:336px;
+}
+
+#content {
+    position: relative;
+    right:50px;
 }
 
 #steps span {
@@ -74,14 +74,14 @@ body > .container {
 #steps .steps-subtext {
     font-size: 12px;
     position: relative;
-    top: -8px;
+    top: 20px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .horizontal-line {
     width: 90px;
     position: relative;
-    left: 150px;
+    top: 40px;
 }
 
 .horizontal-line hr {
@@ -115,22 +115,7 @@ body > .container {
 
 /* Task color */
 
-.task-color {
-    background-color: lightblue;
-    height: 46px;
-    width: 14px;
-}
 
-.task-content li {
-    background-color: lightgrey;
-    height: 46px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
-
-.task-list {
-    height: 25%;
-}
 
 /* Checklist styling */
 
@@ -138,11 +123,11 @@ body > .container {
     background-color: white;
     position: relative;
     top: -170px;
+    border-style: solid;
 }
 
 #checklist-name {
     width: 100%;
-
 }
 
 #checklist #main-title {
