@@ -55,8 +55,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <?php
+
+
+
                         //submission page
-                        include "submission.php"
+                        include "submission.php";
+                        /*$myArray = json_decode($_POST['kvcArray']);
+                        echo $myArray;*/
+
+
+
                     ?>
                 </div>
             </div>

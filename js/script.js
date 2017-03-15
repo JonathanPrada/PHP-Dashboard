@@ -4,30 +4,6 @@ $( function() {
     }).disableSelection();
 } );
 
-/*
-$(document).ready(function(){
-    $("#btn2").click(function(){
-        $("#sortable1").append("<li class='ui-state-default'>" + $('#tags').val() + "<a title='delete' class='itemDelete'><i class='fa fa-minus-circle' aria-hidden='true'></i></a></li>");
-    });
-});
-
-*/
-
-/*
-$( function() {
-    var availableTags = [
-        "Check documentation",
-        "Do recruitment",
-        "Request developers",
-        "Order stationary",
-        "Chair a meeting",
-        "Delegate tasks",
-    ];
-    $( "#tags" ).autocomplete({
-        source: availableTags
-    });
-} );
-*/
 
 //Filtering function
 function myFunction() {
@@ -57,9 +33,9 @@ function myFunction() {
 
 $(document).ready(function() {
 
-$('#sortable1').on('click', '.itemDelete', function() {
-    $(this).parent().remove()
-});
+    $('#sortable1').on('click', '.itemDelete', function() {
+        $(this).parent().remove()
+    });
 
 });
 
@@ -72,4 +48,22 @@ $(document).ready(function() {
 
 });
 
+//get the list on arrays client side
+var array = [];
+$("#sortable2 li").each(function() {
+    array.push($(this).text())
+});
+
+/*
+
+var myJSONText = JSON.stringify( array );
+$.ajax({
+    type: "POST",
+    url: "checklist.php",
+    data: { kvcArray : myJSONText },
+    success: function() {
+        alert("Success");
+    }
+});
+*/
 
