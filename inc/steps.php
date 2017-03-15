@@ -34,7 +34,7 @@
             </div>
             <div class="col-md-1">
                 <span class="glyphicon glyphicon-ok-sign"></span>
-                <p>lemente hinzufügen</p>
+                <p>Elemente hinzufügen</p>
             </div>
             <div class="col-md-1"></div>
         </div>

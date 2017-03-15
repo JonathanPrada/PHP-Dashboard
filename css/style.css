@@ -79,7 +79,7 @@ body > .container {
 }
 
 .horizontal-line {
-    width: 90px;
+    width: 60px;
     position: relative;
     top: 40px;
 }
@@ -109,13 +109,55 @@ body > .container {
 }
 
 .search-field{
-    width: 95%;
+    width: 100%;
 }
 
+#tags {
+    height: 28px;
+    position: relative;
+    top: 1px;
+}
 
-/* Task color */
+/* Task styling */
 
+#sortable1 .ui-state-default {
+    background-color: #f3f3f3;
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 46px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-style: none;
+    border-left-style: solid;
+    border-left-color: #00b3ee;
+    border-left-width: 15px;
+    list-style-type: none;
+}
 
+#sortable2 .fa-minus-circle {
+    color: dodgerblue;
+}
+
+#sortable2 .ui-state-default {
+    background-color: #f3f3f3;
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 46px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-style: none;
+    border-left-style: solid;
+    border-left-color: #00b3ee;
+    border-left-width: 15px;
+    list-style-type: none;
+}
+
+#sortable2 a{
+    float: right;
+    padding-right: 10px;
+}
 
 /* Checklist styling */
 
@@ -124,14 +166,25 @@ body > .container {
     position: relative;
     top: -170px;
     border-style: solid;
+    border-color: #f3f3f3;
+    border-width: thin;
+    border-bottom-width: thin;
+    border-bottom-color: grey;
 }
 
 #checklist-name {
+    border-style: none;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: grey;
     width: 100%;
 }
 
 #checklist #main-title {
-    background-color: lightgrey;
+    background-color: #f3f3f3;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: lightgrey;
 }
 
 #checklist .subtitle-blue {
@@ -142,19 +195,11 @@ body > .container {
     color: gray;
 }
 
-/* Task sorting */
+/* Checklist button */
 
-#sortable1, #sortable2 {
-    width: 100%;
-    list-style-type: none;
-    padding-left: 0px;
+.input-group-btn {
+    position: relative;
+    top:1px;
+}
 
-}
-#sortable1 li, #sortable2 li {
-    font-size: 1.2em;
-    width: 100%;
-    background-color: lightgrey;
-    height: 46px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+

@@ -1,10 +1,9 @@
-<p>Name der Checkliste</p>
-<br>
+<p class="subtitle-gray">Name der Checkliste</p>
 <form action="index.php" method="post">
     <div class="input-group search-field">
         <input id="checklist-name" type="text" name="name">
                 <span class="input-group-btn">
-                    <input type="submit" class="btn btn-primary btn-sm" name="checklist-submit" value="Spreichern"/>
+                    <input type="submit" class="btn btn-primary btn-xs" name="checklist-submit" value="Spreichern"/>
                 </span>
     </div>
 </form>
