@@ -8,6 +8,7 @@
                 <ul id="sortable1" class="connectedSortable">
                     <!-- Todo: Add a message "Insert tasks" if empty -->
                     <?php include "connection.php" ?>
+                    <br>
                 </ul>
             </div>
         </div>
@@ -55,16 +56,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <?php
-
-
-
-                        //submission page
+                         //submission page
                         include "submission.php";
-                        /*$myArray = json_decode($_POST['kvcArray']);
-                        echo $myArray;*/
-
-
-
                     ?>
                 </div>
             </div>
@@ -72,6 +65,7 @@
                 <div class="col-md-12 task-list">
                     <br>
                     <ul id="sortable2" class="connectedSortable">
+                        <br>
                         <li class="ui-state-default">First <a title='delete' class="itemDelete text-right"><i class="fa fa-minus-circle" aria-hidden="true"></i></a></li>
                         <li class="ui-state-default">Second <a title='delete' class="itemDelete"><i class="fa fa-minus-circle" aria-hidden="true"></i></a></li>
                         <li class="ui-state-default">Third <a title='delete' class="itemDelete"><i class="fa fa-minus-circle" aria-hidden="true"></i></a></li>

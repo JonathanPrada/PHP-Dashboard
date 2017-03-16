@@ -29,8 +29,6 @@
         //Checklist
         include "inc/checklist.php";
 
-    $variable = $_POST['variable'];
-    var_dump($variable);
     ?>
 
     </div>

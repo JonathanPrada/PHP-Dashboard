@@ -1,9 +1,8 @@
 $( function() {
     $( "#sortable1, #sortable2" ).sortable({
-        connectWith: ".connectedSortable"
+        connectWith: ".connectedSortable",
     }).disableSelection();
 } );
-
 
 //Filtering function
 function myFunction() {
@@ -32,38 +31,32 @@ function myFunction() {
 }
 
 $(document).ready(function() {
-
     $('#sortable1').on('click', '.itemDelete', function() {
         $(this).parent().remove()
     });
-
 });
 
-
 $(document).ready(function() {
-
     $('#sortable2').on('click', '.itemDelete', function() {
         $(this).parent().remove()
     });
-
 });
 
-//get the list on arrays client side
-var array = [];
-$("#sortable2 li").each(function() {
-    array.push($(this).text())
-});
+//On submission of the form get the latest list and do the below
+function listGrabber() {
+    //get the list and push it into an array
+    var array = [];
+    $("#sortable2 li").each(function() {
+        array.push($(this).text())
+    });
 
-/*
+    //convert the array to string, we need to do this for the form
+    array = array.toString();
 
-var myJSONText = JSON.stringify( array );
-$.ajax({
-    type: "POST",
-    url: "checklist.php",
-    data: { kvcArray : myJSONText },
-    success: function() {
-        alert("Success");
-    }
-});
-*/
+    //append to the hidden input field on the form the converted array that is a string
+    //when the form gets submitted so does the array through the post method
+    $('#checklist-list').val(array);
 
+    //Remove only the unordered list items after submission
+    //$('#sortable2').empty();
+}

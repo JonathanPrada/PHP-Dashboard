@@ -135,6 +135,18 @@ body > .container {
     list-style-type: none;
 }
 
+#sortable1 br {
+    line-height: 5px;
+}
+
+#sortable2 br {
+    line-height: 5px;
+}
+
+#sortable2 ul {
+    min-height: 200px;
+}
+
 #sortable2 .fa-minus-circle {
     color: dodgerblue;
 }
