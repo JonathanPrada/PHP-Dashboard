@@ -57,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $sql . "<br>" . $e->getMessage();
     }
 
-    //READ: Add these tasks to our task list
+/*    //READ: Add these tasks to our task list
     try {
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -73,7 +73,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     catch(PDOException $e)
     {
         echo $sql . "<br>" . $e->getMessage();
-    }
+    }*/
 
     //READ: Add listid and tasks to our savedlists table
     try {

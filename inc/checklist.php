@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-4">
+        <div class="col-md-5">
             <div class="row">
                 <ul id="sortable1" class="connectedSortable">
                     <!-- Todo: Add a message "Insert tasks" if empty -->
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="col-md-1"></div>
+
         <div id="checklist" class="col-md-4">
             <div id="main-title" class="row">
                 <div class="col-md-12">
@@ -66,10 +66,12 @@
                     <br>
                     <ul id="sortable2" class="connectedSortable">
                         <br>
-                        <li class="ui-state-default">First <a title='delete' class="itemDelete text-right"><i class="fa fa-minus-circle" aria-hidden="true"></i></a></li>
-                        <li class="ui-state-default">Second <a title='delete' class="itemDelete"><i class="fa fa-minus-circle" aria-hidden="true"></i></a></li>
-                        <li class="ui-state-default">Third <a title='delete' class="itemDelete"><i class="fa fa-minus-circle" aria-hidden="true"></i></a></li>
                     </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <?php include "submit.php" ?>
                 </div>
             </div>
         </div>
