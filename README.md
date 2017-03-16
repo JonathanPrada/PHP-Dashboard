@@ -3,6 +3,7 @@
 Interesting links:
 https://jqueryui.com/sortable/#connect-lists
 
+View Raw to see sortable2 code:
 
 <ul id="sortable2" class="connectedSortable">
     <br>
