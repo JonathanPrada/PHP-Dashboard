@@ -1,0 +1,15 @@
+https://react.rocks/tag/List
+
+https://phpdelusions.net/pdo#fetchcolumn
+
+http://stackoverflow.com/questions/14686697/jquery-ui-sortable-prevent-dropping-on-one-particular-list
+
+http://stackoverflow.com/questions/512054/setting-background-image-using-jquery-css-property
+
+http://stackoverflow.com/questions/7020659/submit-form-using-a-button-outside-the-form-tag
+
+https://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+http://stackoverflow.com/questions/15633341/jquery-ui-sortable-then-write-order-into-a-database
+
+http://stackoverflow.com/questions/5456626/php-pdo-returning-single-row
