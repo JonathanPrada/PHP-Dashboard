@@ -5,7 +5,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-5">
             <div class="row">
-                <ul id="sortable1" class="connectedSortable">
+                <ul id="sortable1" class="connectedSortable ui-sortable-placeholder">
                     <!-- Todo: Add a message "Insert tasks" if empty -->
                     <?php include "connection.php" ?>
                     <br>
@@ -70,8 +70,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <?php include "submit.php" ?>
+                <div class="col-md-12 text-right">
+                    <label id="label-button" for="submit-form" class="btn btn-primary" >SPEICHERN</label>
                 </div>
             </div>
         </div>

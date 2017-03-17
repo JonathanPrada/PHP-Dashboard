@@ -9,7 +9,7 @@ try {
     $conn = new PDO("mysql:host=$servername;port=8889;dbname=dashboard", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->query('SELECT taskid, description FROM tasks');
+    $stmt = $conn->query('SELECT taskid, description FROM tasks ORDER BY description ASC');
     while ($row = $stmt->fetch())
     {
         echo "<li class=\"ui-state-default\"><a>" . $row['description'] . "</a></li>";

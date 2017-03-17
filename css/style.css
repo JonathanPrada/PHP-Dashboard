@@ -1,6 +1,9 @@
 /* body & general styling */
 
-body {
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -51,7 +54,7 @@ body > .container {
     background-color: #1d56a5;
     color: white;
     height:336px;
-    padding-right: 50px;
+    padding-right: 150px;
 }
 
 #content {
@@ -90,7 +93,7 @@ body > .container {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid dimgrey;
+    border-top: 1px solid cornflowerblue;
     margin: 1em 0;
     padding: 0;
 }
@@ -124,8 +127,9 @@ body > .container {
 }
 
 #btn2 {
+    position: relative;
+    top:1px !important;
     height: 50px !important;
-
 }
 
 #btn2:hover{
@@ -138,6 +142,10 @@ body > .container {
 #tasks {
     position: relative;
     padding-left: 25px;
+}
+
+.ui-state-default {
+    border-radius: 3px !important;
 }
 
 #sortable1 {
@@ -173,6 +181,7 @@ body > .container {
 
 #sortable2 {
     padding-left: 0 !important;
+    padding-bottom: 40px;
 }
 
 #sortable2 ul {
@@ -202,6 +211,11 @@ body > .container {
     padding-left: 10px;
 }
 
+.fa-minus-circle {
+    float: right;
+    padding-right: 10px;
+}
+
 /* Checklist styling */
 
 #checklist {
@@ -213,6 +227,7 @@ body > .container {
     border-width: thin;
     border-bottom-width: thin;
     border-bottom-color: grey;
+    padding-bottom: 20px;
 }
 
 #checklist-name {
@@ -220,7 +235,8 @@ body > .container {
     border-bottom: solid;
     border-bottom-width: thin;
     border-bottom-color: grey;
-    width: 100%;
+    width: 112%;
+    height: 40px;
 }
 
 #checklist #main-title {
@@ -238,11 +254,115 @@ body > .container {
     color: gray;
 }
 
-/* Checklist button */
+/* Checklist label button */
 
-.input-group-btn {
-    position: relative;
-    top:1px;
+#label-button {
+    border-radius: 3px !important;
+    border-bottom-color: darkgrey;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
 }
 
+/* Background draggable space*/
+.bg1
+{
+    background-color: lightgray;
+}
 
+.bg2
+{
+    background-color: white;
+}
+
+/* 1260 x 800 screen sizing */
+
+@media screen and (max-width: 1280px) {
+
+    /* Checklist styling */
+
+    #checklist {
+        background-color: white;
+        position: relative;
+        top: -231px;
+        border-style: solid;
+        border-color: #f3f3f3;
+        border-width: thin;
+        border-bottom-width: thin;
+        border-bottom-color: grey;
+        padding-bottom: 20px;
+    }
+
+
+    /* menu styling */
+    #newmenu {
+        background-color: #114285;
+        color: white;
+        height: 56px;
+        font-size: 16px;
+    }
+
+
+    #newmenu span {
+        position: relative;
+        top: 18px;
+        left: 80px;
+    }
+
+    #newmenu p {
+        position: relative;
+        top: 16px;
+        left: 0px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+    }
+
+    /* steps styling */
+
+    #steps {
+        background-color: #1d56a5;
+        color: white;
+        height:336px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #steps span {
+        position: relative;
+        right: 40px;
+        top: 40px;
+        size: 200px;
+    }
+
+    #steps p {
+        position: relative;
+        font-size: 14px;
+        top: 25px;
+    }
+
+
+    #steps .steps-subtext {
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .horizontal-line {
+        width: 40px;
+        position: relative;
+        top: 40px;
+
+    }
+
+    .horizontal-line hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid cornflowerblue;
+        margin: 1em 0;
+        padding: 0;
+    }
+}

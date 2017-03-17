@@ -1,6 +1,15 @@
 $( function() {
     $( "#sortable1, #sortable2" ).sortable({
         connectWith: ".connectedSortable",
+        receive: function(event, ui) {
+            $(ui.item).append('<a title="delete" class="itemDelete"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>');
+        },
+        beforeStop: function (event, ui) {
+            if ($("#sortable1").find('.ui-sortable-placeholder').length) {
+                // about to drop item into #list3, so cancel the sort
+                return false;
+            }
+        }
     }).disableSelection();
 } );
 
@@ -21,10 +30,11 @@ function myFunction() {
     for (i = 0; i < li.length; i++) {
         //for each li, look at the value held by the a tag at index 0
         a = li[i].getElementsByTagName("a")[0];
-        //if the value of a converted to uppercase and index retrieve
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            //Dont do the display
             li[i].style.display = "";
         } else {
+            //Do the display
             li[i].style.display = "none";
         }
     }
@@ -60,3 +70,10 @@ function listGrabber() {
     //Remove only the unordered list items after submission
     //$('#sortable2').empty();
 }
+
+if($('#sortable1 li').find('i').length > 0){
+    console.log("This has it!");
+}
+
+
+

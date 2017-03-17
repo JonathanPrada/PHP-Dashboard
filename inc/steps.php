@@ -1,8 +1,9 @@
 <!-- Steps -->
 <div class="row">
-    <div class="col-md-2"></div>
+
         <div id="steps">
             <div id="content">
+            <div class="col-md-2"></div>
             <div class="col-md-1">
                 <span class="glyphicon glyphicon-ok-sign"></span>
                 <p>Gruppe erfasen</p>
@@ -33,7 +34,7 @@
                 <div class="horizontal-line"><hr></div>
             </div>
             <div class="col-md-1">
-                <span class="glyphicon glyphicon-ok-sign"></span>
+                <span class="glyphicon glyphicon-circle-arrow-right"></span>
                 <p>Elemente hinzufügen</p>
             </div>
             <div class="col-md-1"></div>
